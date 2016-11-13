@@ -4,3 +4,169 @@
 //	This file requires SASS compiler.
 //	You can find instructions here: http://www.artodia.com/phpbb-31-tutorials/compile-theme/
 //
+
+
+div.copyright {
+	color: #828282;
+}
+div.stat-block {
+	color: rgba(234, 235, 225, 0.8);
+	/*background-color:rgba(234, 235, 225, 0.5);*/
+	border-radius:3px;
+}
+
+/*p.author {
+	border-bottom:2px solid #d6d8c2;
+}
+
+.postprofile {
+	border-right:2px solid #d6d8c2 !important;
+}*/
+
+fieldset.jumpbox label, fieldset.display-options label {
+	color: rgba(234, 235, 225, 0.8) !important;
+	font-weight: bold;
+}
+
+div.stat-block h3 {
+	color:#5d8e4e;
+}
+
+html, body {
+	background:url(images/nellyaa_tenteggl.jpg);
+}
+
+.pagination {
+	color:rgba(234, 235, 225, 0.8);
+	color:#828282;
+}
+
+a.button1, input.button1 {
+	background-color:#5d8e4e !important;
+	color:#eaebe1 !important;
+}
+
+a.button1:hover, input.button1:hover {
+	background-color:#96a65c !important;
+	background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0px, rgba(255, 255, 255, 0) 100%);
+}
+
+.notification_list li.bg3 {
+	/*background-color:#ddc88f !important;*/
+}
+
+#navigation a {
+	background-color:#f9f9f5 !important;
+	border-radius:2px !important;
+}
+
+#active-subsection a {
+	background-color:$primary-color !important;
+}
+
+.online-ribbon span {
+	background-color:#3a3a3a !important;
+	color:#96a65c !important;
+	text-transform:lowercase !important;
+	/*border:2px solid $primary-color !important;*/
+	background-image: linear-gradient(45deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0.2) 100%) !important;
+}
+
+.online-ribbon span + span {
+	opacity:1 !important;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4) !important;
+}
+
+.codebox p {
+	background-color:#d6dbc2 !important;
+	color:#000 !important;
+}
+
+.codebox p, blockquote cite {
+	background-color:#d6dbc2 !important;
+		color:#000 !important;
+}
+
+.codebox p, .codebox p a, blockquote cite, blockquote cite a {
+	color:$primary-color !important;
+}
+
+.codebox p a:hover, blockquote cite a:hover {
+	color:#000 !important;
+}
+
+blockquote.uncited, .codebox, blockquote {
+	border-color:#abc2a0 !important;
+}
+
+blockquote.uncited {
+	padding-top:5px !important;
+}
+
+blockquote:before {
+	content:"„“" !important;
+	color:#5d8e4e !important;
+}
+
+blockquote.uncited:before {
+	color:#5d8e4e !important;
+	right:5px !important;
+	left:auto !important;
+	opacity:0.5 !important;
+}
+
+.avatar, .avatar-container {
+	border-radius:2px;
+}
+
+.no-avatar .avatar-container {
+	width:150px;
+	height:150px;
+}
+
+.postprofile .username-coloured, .postprofile .username, .portal-centered-content .username-coloured  {
+	font-family:"Droid Sans", "Open Sans", Helvetica !important;
+	font-size:16px !important;
+	display:block !important;
+	text-align:center !important;
+	font-weight:normal !important;
+	margin-top:5px;
+}
+
+.portal-centered-content .username-coloured   {
+	margin-bottom:-10px !important;
+}
+
+.profile-rank {
+	font-family:"Droid Sans", "Open Sans", Helvetica !important;
+	display:block !important;
+	text-align:center !important;
+	margin-top:-2px !important;
+}
+
+.postprofile {
+	padding-right:3px !important;
+}
+
+#phpbb {
+	background-image:url(images/nellyaa_BG.png), url(images/nellyaa_tenteggl.jpg);
+	background-position:center top, center top;
+	background-repeat:no-repeat, repeat;
+}
+
+#logo {
+	height:270px;
+	width:323px;
+	position:relative !important;
+	margin:0 0;
+	margin-left:-4px;
+}
+
+.no-avatar .avatar-container {
+        background-image: url("./images/nellyaa_no_avatar.png") !important;
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 1.5dppx) {
+                background-image: url("./images/nellyaa_no_avatar_hd.png") !important;
+        }
+	width: 138px;
+	height: 138px;
+}
