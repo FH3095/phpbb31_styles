@@ -19,11 +19,11 @@ $primary-color:		#5d8e4e; // (BG+links) Main color, used for links and stuff
 $secondary-color:	#96a65c; // Secondary color, usually in red - yellow range
 $overlay-color:		#eaebe1; // Text on top of sections that use colorful background
 $block-background:	#eaebe1; // (BG der Blöcke) Background of blocks
-$block-background-reported: #e3d28e; // Background for reported posts
+$block-background-reported: #bfd1a0; // Background for reported posts
 
 $text-color:		#141414; // Text color
 
-$rules-color:		#ddc88f; /*desaturate(hsl(0, saturation($secondary-color), lightness($secondary-color)), 20%) !default;	// Forum rules*/
+$rules-color:		#3a3a3a; /*desaturate(hsl(0, saturation($secondary-color), lightness($secondary-color)), 20%) !default;	// Forum rules*/
 
 $block-background2:	#eaebe1; // Blocks with .bg2 background color
 $block-background3:	#eaebe1; // Blocks with .bg3 background color - mostly UCP/MCP and posting form
@@ -36,7 +36,7 @@ $tab-selected-border:		$block-background;
 $primary-nav-alert-bg:		#a7cf68; //Sprechblase an Glocke für New
 $primary-nav-alert-color:	#3a3a3a; //Zahlfarbe
 
-$notification-unread-bg:	#e6d9a3; //$block-background-reported; //mix($content-background, $rules-color, 90%) !default;
+$notification-unread-bg:	#bfd1a0; //$block-background-reported; //mix($content-background, $rules-color, 90%) !default;
 $notification-unread-color:	#000000; //$rules-color
 
 $dropdown-notification-hover-bg:	#f2f3ea;

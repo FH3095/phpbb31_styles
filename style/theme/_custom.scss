@@ -174,7 +174,19 @@ blockquote.uncited:before {
 a.top::after, a.top2::after {
 	content:"\f077";
 	font-size:16px;
+}
+
+a.top, a.top2 {
 	width:16px;
+}
+
+.imageset.icon_topic_reported::after {
+	color:#3a3a3a;
+}
+
+.imageset.icon_topic_latest::after, .imageset.icon_topic_newest::after {
+	color:#619452;
+	font-size:12px;
 }
 
 
