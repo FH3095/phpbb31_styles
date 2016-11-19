@@ -9,10 +9,15 @@
 <!-- EVENT index_body_markforums_before -->
 <!-- EVENT index_body_markforums_after -->
 
+<!-- IF S_AJAX_SHOUTBOX and not $AJAX_SHOUTBOX_INCLUDED -->
+    <!-- INCLUDE @paul999_ajaxshoutbox/ajax_shoutbox_body.html -->
+    <!-- DEFINE $AJAX_SHOUTBOX_INCLUDED = true -->
+<!-- ENDIF -->
 <!-- INCLUDE forumlist_body.html -->
 
 <!-- EVENT index_body_forumlist_body_after -->
 
+{# FH Login-Block disabled
 <!-- IF not S_USER_LOGGED_IN and not S_IS_BOT -->
 	<form method="post" action="{S_LOGIN_ACTION}" class="headerspace">
 	<h3><a href="{U_LOGIN_LOGOUT}">{L_LOGIN_LOGOUT}</a><!-- IF S_REGISTER_ENABLED -->&nbsp; &bull; &nbsp;<a href="{U_REGISTER}">{L_REGISTER}</a><!-- ENDIF --></h3>
@@ -30,6 +35,7 @@
 		</fieldset>
 	</form>
 <!-- ENDIF -->
+#}
 
 <!-- EVENT index_body_stat_blocks_before -->
 
