@@ -189,6 +189,26 @@ a.top, a.top2 {
 	font-size:12px;
 }
 
+.portal-navigation ul li a {
+	background-image:url(images/portal/arrowbullet.gif) !important;
+}
+
+.profile-avatar {
+	margin-top:3px;
+}
+
+.portal-user-icon {
+	background-image:url(images/portal/nellyaa_user_icon.png) !important;
+}
+
+/*#text_shoutbox {
+	width:70%;
+}*/
+
+img.smilies {
+	width: 20px;
+	height: 20px;
+}
 
 // Forum and Topic icons
 .global_read													{ background-image: url("./images/nellyaa_announce_read.png"); }
