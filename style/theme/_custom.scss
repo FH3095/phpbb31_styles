@@ -54,10 +54,20 @@ a.button1:hover, input.button1:hover {
 .notification_list li.bg3 {
 	/*background-color:#ddc88f !important;*/
 }
-
+/* Navigation */
 #navigation a {
 	background-color:#f9f9f5 !important;
 	border-radius:2px !important;
+}
+
+.cp-mini {
+	background-color:#f9f9f5 !important;
+	border-radius:2px !important;
+	margin:10px 0px 0px 0px;
+}
+
+.column2 {
+	margin-top:5px;
 }
 
 #active-subsection a {
@@ -124,7 +134,7 @@ blockquote.uncited:before {
 	height:150px;
 }
 
-.postprofile .username-coloured, .postprofile .username, .portal-centered-content .username-coloured  {
+.postprofile .username-coloured, .postprofile .username, .portal-centered-content .username-coloured,  .portal-centered-content .username {
 	font-family:"Droid Sans", "Open Sans", Helvetica !important;
 	font-size:16px !important;
 	display:block !important;
@@ -133,7 +143,7 @@ blockquote.uncited:before {
 	margin-top:5px;
 }
 
-.portal-centered-content .username-coloured   {
+.portal-centered-content .username-coloured,.portal-centered-content .username  {
 	margin-bottom:-10px !important;
 }
 
@@ -205,9 +215,57 @@ a.top, a.top2 {
 	width:70%;
 }*/
 
+/* Die folgenden 3 Sachen machen ein hübsches Post-Foren-Icon am Beitrag */
+ul.topiclist li.row dt a.subforum.read {
+	padding:0 0 0 14px;
+}
+
+.imageset.icon_post_target, .imageset.icon_post_target_unread {
+	background-size:13px 11px;
+}
+
+.imageset.icon_post_target, .imageset.icon_post_target_unread {
+	padding-left:13px;
+	padding-top:11px;
+}
+
 img.smilies {
 	width: 20px;
 	height: 20px;
+}
+
+@media (max-width: 700px) {
+	.logo {
+		padding: 0px;
+	}
+}
+
+// FH Make portal body icons disappaer
+#portal-body li.header dl dt img {
+	display: none;
+}
+
+#memberlist .avatar,
+#memberlist img[src^="//secure.gravatar.com"] {
+	max-width: 75px !important;
+	max-height: 75px !important;
+}
+.fh-align-center, .fh-center {
+	display: block; 
+	text-align: center;
+}
+.fh-align-right {
+	display: block; 
+	text-align: right;
+}
+.fh-align-left {
+	display: block; 
+	text-align: left;
+}
+
+
+.fh-strikethrough {
+	text-decoration: line-through;
 }
 
 // Forum and Topic icons
@@ -299,4 +357,28 @@ img.smilies {
 	.topic_unread_hot_mine										{ background-image: url("./images/nellyaa_topic_unread_hot_mine_hd.png"); }
 	.topic_unread_locked										{ background-image: url("./images/nellyaa_topic_unread_locked_hd.png"); }
 	.topic_unread_locked_mine									{ background-image: url("./images/nellyaa_topic_unread_locked_mine_hd.png"); }
+}
+ul.topiclist li.row dt a.subforum.read {
+	background-image: url("./images/nellyaa_subforum_read.png");
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 1.5dppx)	{
+		background-image: url("./images/nellyaa_subforum_read_hd.png");
+	}
+}
+ul.topiclist li.row dt a.subforum.unread {
+	background-image: url("./images/nellyaa_subforum_unread.png");
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 1.5dppx)	{
+		background-image: url("./images/nellyaa_subforum_unread_hd.png");
+	}
+}
+.imageset.icon_post_target {
+	background-image: url("./images/nellyaa_icon_post_target.png");
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 1.5dppx)	{
+		background-image: url("./images/nellyaa_icon_post_target_hd.png");
+	}
+}
+.imageset.icon_post_target_unread {
+	background-image: url("./images/nellyaa_icon_post_target_unread.png");
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 1.5dppx)	{
+		background-image: url("./images/nellyaa_icon_post_target_unread_hd.png");
+	}
 }
