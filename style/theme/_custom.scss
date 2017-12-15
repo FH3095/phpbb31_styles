@@ -273,6 +273,11 @@ img.smilies {
 	text-decoration: line-through;
 }
 
+blockquote div {
+	margin-right: 15px;
+}
+
+
 // Forum and Topic icons
 .global_read													{ background-image: url("./images/nellyaa_announce_read.png"); }
 .global_read_mine												{ @extend .global_read; }
