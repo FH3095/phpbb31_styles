@@ -158,12 +158,6 @@ blockquote.uncited:before {
 	padding-right:3px !important;
 }
 
-#phpbb {
-	background-image:url(images/nellyaa_BG.png), url(images/nellyaa_tenteggl.jpg);
-	background-position:center top, center top;
-	background-repeat:no-repeat, repeat;
-}
-
 #logo {
 	height:270px;
 	width:323px;
@@ -275,6 +269,29 @@ img.smilies {
 
 blockquote div {
 	margin-right: 15px;
+}
+
+.fh-logo-container {
+	position: absolute;
+	left: 50%;
+	width: 1202px;
+	height: 353px;
+}
+
+#fh-logo {
+	position: relative;
+	left: -50%;
+	background-image: url(images/nellyaa_BG.png);
+	background-position:center top;
+	width: 1202px;
+	height: 353px;
+}
+
+#fh-logo-overlay {
+	@extend #fh-logo;
+	background-image: url(images/nellyaa_BG_overlay.png);
+	pointer-events: none;
+	z-index: 10;
 }
 
 
@@ -391,4 +408,8 @@ ul.topiclist li.row dt a.subforum.unread {
 	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 1.5dppx)	{
 		background-image: url("./images/nellyaa_icon_post_target_unread_hd.png");
 	}
+}
+
+div.codebox > code {
+	white-space: pre;
 }
