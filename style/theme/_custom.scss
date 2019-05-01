@@ -271,27 +271,39 @@ blockquote div {
 	margin-right: 15px;
 }
 
-.fh-logo-container {
-	position: absolute;
-	left: 50%;
-	width: 1202px;
-	height: 353px;
+/* Logo / Header things */
+
+body {
+	border-top-style: none;
+	border-top-width: 0px;
 }
 
-#fh-logo {
-	position: relative;
-	left: -50%;
-	background-image: url(images/nellyaa_BG.png);
+.navbar .nav-tabs .tab {
+	z-index: 20;
+}
+
+.fh-logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
 	background-position:center top;
 	width: 1202px;
 	height: 353px;
 }
 
 #fh-logo-overlay {
-	@extend #fh-logo;
+	@extend .fh-logo;
 	background-image: url(images/nellyaa_BG_overlay.png);
 	pointer-events: none;
 	z-index: 10;
+}
+
+#fh-logo-background {
+	@extend .fh-logo;
+	background-image: url(images/nellyaa_BG.png);
 }
 
 
